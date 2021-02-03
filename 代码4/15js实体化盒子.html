@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#div1{width: 100px; height: 100px; background: red;}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<div id="div2"></div>
+	</body>
+</html>
+<script type="text/javascript">
+	// 想要设置谁 就必须先要找到它 使用英文状态下的点来进行连接
+	// 使用空格 只是为了看起来舒服
+	// document.getElementById('div2').style.width ='200px';
+	// document.getElementById('div2').style.height ='200px';
+	// document.getElementById('div2').style.background ='pink';
+	
+	// 变量就是给数据请了一个代言人 今后只要出现变量名 就代表等号之后的这堆代码
+	var $_dyr = document.getElementById('div2').style;
+	// 变量起名字时候的注意事项：可以使用中文、可以使用符号_$、命名不可以使用数字开头、不允许使用js已经占用了的单词（保留字）
+	
+	$_dyr.width ='200px';
+	$_dyr.height ='200px';
+	$_dyr.background ='pink';
+</script>

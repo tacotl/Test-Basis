@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 音频标签价值很高，浏览器都想以自己为标准，所以w3c联盟组织，就规定了浏览器对音频标签的兼容性要求 如果想要主流的浏览器都能很好的播放音频 就需要把这首音频 设置为不同的格式，都加载到页面中，这样就可以保证浏览器兼容性 -->
+		 <!-- <audio src="yinpin.mp3" controls="controls" autoplay="autoplay" 
+		 loop="loop"></audio> -->
+		 
+		 <!-- 以下这种写法可以保证兼容性更好 -->
+		 <audio controls="controls" autoplay="autoplay" loop="loop">
+		 	<source src="yinpin.mp3"></source>
+			<source src="yinpin.ogg "></source>
+		 </audio>
+	</body>
+</html>

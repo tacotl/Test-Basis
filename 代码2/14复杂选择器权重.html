@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- css内嵌式
+		 
+		 
+		 -->
+		<style type="text/css">
+			/* #p1 span{color: yellow;} */
+			/* .p1 span{color: pink;} */
+			/* p span{color: blue;} */
+			span{color: red;}
+			/* p{color: blue;} */
+			#div1{color: blue;}
+			
+			/* 
+			 针对同一个标签设置css属性 最终计算权重最大的 才会生效
+			 id100     class10     标签1
+			 
+			 *内嵌式css不用加载外部的css文件，网页的加载速度就更快一些 电商网站的首页对于网页的打开速度有
+			 *更高的要求
+			 
+			 
+			 */
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			<p class="p1" id="p1">
+				<span>呵呵</span>
+			</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<video width="800" height="" controls="controls" loop="loop" autoplay="autoplay">
+			
+			<!-- 执行顺序跟刚刚的音频标签事一样的 由上至下运行 能识别哪一个就直接播放 -->
+			<!-- type中的video不用修改 src中的文件名就可以 -->
+			<source src="myvideo.mp4" type="video/mp4"></source>
+			<source src="myvideo.ogv" type="video/ogg"></source>
+			<source src="myvideo.webm" type="video/webm"></source>
+			
+			<!-- 下面的提示文字 只有在浏览器无法识别以上视频的时候才会显示给用户看 用户可以点击你写好的链接地址 下载视频 使用自己本地的播放器来看 -->
+			当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+		</video>
+	</body>
+</html>

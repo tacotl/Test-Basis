@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div{width: 100px; height: 30px; border: 1px solid #000000; border-radius: 10px; animation: go 1s infinite alternate;}
+			/* infinite 无限循环动画 alternate逆向动画 */
+			/* animation 动画名字 时间   来调用动画 */
+			
+			/* 先使用keyframes定义动画 */
+			@keyframes go{
+				/* 开始时候状态 */
+				from{background: red; transform: translate(0px,0px);}
+				/* 结束时候状态 */
+				to{background: blue; transform: translate(100px,0px);}
+			}
+		</style>
+	</head>
+	<body>
+		<div>刘力菲</div>
+	</body>
+</html>

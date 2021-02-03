@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		/* 后代选择器 使用空格来实现
+		 *后代指的就是儿子、孙子
+		 
+		 */
+			div span{color: red;}
+			/* .bz span{color: ;} */
+			
+			#bz span{color: red;}
+			/* 同一个标签设置id和class不会有冲突，哪怕id的值和class值一致也不会有问题 */
+		</style>
+	</head>
+	<body>
+		<!-- div可以嵌套p 反过来不可以 -->
+		<div class="bz" id="bz">
+			<p>
+				<span>呵呵</span>
+			</p>
+			<span>嘎嘎</span>
+		</div>
+	</body>
+</html>

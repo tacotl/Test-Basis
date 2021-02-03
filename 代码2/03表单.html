@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			textarea{resize: none;}
+		</style>
+	</head>
+	<body>
+		<!-- form标签就是作为表单数据的根
+		     action属性的值就是要把所有表单
+			 
+			 method代表传输数据时候的方法:get代表明文传送 post代表简单的加密传输
+		 
+		 
+		 -->
+		<form action="某一个后台程序" method="post" />
+			
+			<!-- type="text" 代表普通的输入框 placeholder属性中可以设置 用户的提醒文字 -->
+			用户名：<input type="text" placeholder="请输入用户名" name="xxx"/>
+			<br />
+			
+			<!-- 密码框 type=password"" -->
+			密码框：<input type="password" />
+			<br />
+			
+			<!-- 关注点击的时候 是否为单选效果 点击文字也可以实现切换效果 会提升用户体验 name设置一样的就只能选其中一个-->
+			性别：<input type="radio" name="sex" id="man" checked="checked" /><label for="man">男</label> <input type="radio" name="sex" id="lady" /><label for="lady">女</label>
+			<input type="radio" name="sex" id="bm" /><label for="bm">保密</label>
+			<br />
+			
+			<!-- 复选框、多选框：可以全部点选，也可以点击一部分；为了提升用户体验也要和单选框一样，
+			点击提示文字也可以实现联动点击效果 -->	
+			爱好：<input type="checkbox" id="cf"><label for="cf">吃饭</label><input type="checkbox" id="sj" checked="checked"><label for="sj">睡觉</label>
+			<input type="checkbox" id="ddd"><label for="ddd">打豆豆</label>
+			
+			<br />
+			<!-- 注意默认选项 是否符合要求；总共的下拉可选数也要符合要求 -->
+			你来自：<select name="" id="">
+				<option value ="">北京</option>
+				<option value ="">上海</option>
+				<option value ="">广州</option>
+				<option value ="" selected="selected">深圳</option>
+				
+			</select>
+			<br />
+			<!-- cols和rows分别代表列和行，程序员一般不使用这个属性，因为有兼容性问题 使用CSS来解决
+			 右下角的按钮要关闭，不允许用户自行改变大小
+			 -->
+			建议：<textarea name="" id="" cols="30" rows="10" placeholder="请填写您的意见"></textarea>
+			<br />
+			
+			普通按钮：<input type="button" value="按钮" />
+			<!-- type="reset" 重置按钮，value属性也要设置 因为如果不设置 浏览器就会自己写入一个默认值 -->
+			重置按钮：<input type="reset" value="重置" />
+			<!-- 此按钮点击后会把表单中的数据 上传到form标签中的action里面的值所对应的后台程序
+			     value别忘了自己设置 否则会有兼容性问题
+			 
+			 -->
+			提交按钮：<input type="submit" value="提交" />
+		</form>
+	</body>
+</html>

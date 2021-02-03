@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			
+			/* 前提：针对同一个标签设置css才有权重之分
+			 *
+			 *id > class > 标签 */
+			/* #div1{color: pink;} */
+            /* .div1{color: blue;} */
+			/* div{color: red;}			 */
+			
+			/* 继承的权重最低 */
+			 span{color: red;}
+			.div1{color: blue;}
+			
+			/* 
+			 *我们人为的给id定位100 class定位10 标签1
+			 */
+		</style>
+	</head>
+	<body>
+		<!-- <div class="div1" id="div1">呵呵</div> -->
+		<div class="div1">
+			<span>呵呵</span>
+		</div>
+	</body>
+</html>

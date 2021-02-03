@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			img{ width: 110px; height: 150px; margin: 50px; animation: dou .1s 5s infinite alternate; }
+
+			/* img:hover{animation: dou .1s 1s infinite alternate;} */
+			
+			/* 可以使用百分比替代默认的from和to
+			 * 时间如果出现2个 第一个代表动画运动时间 第二个代表延迟时间 也可以设置ease变速运动效果
+			 
+			 
+			 */
+			@keyframes dou{
+				0%{transform: rotate(-5deg);}
+				50%{transform: rotate(0deg);}
+				100%{transform: rotate(5deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<img src="2.jpg" >
+	</body>
+</html>

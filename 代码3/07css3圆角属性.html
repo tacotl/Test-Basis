@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div{width: 100px; height: 50px; border: 1px solid black; margin: 20px; background: gray;}
+			/* border-radius 一个值代表四个方向都一致 */
+			.div1{border-radius: 8px;}
+			/* border-radius 四个值代表 左上 右上 右下 左下 */
+			.div2{border-radius: 8px 0 0 0;}
+			/* border-radius 两个值 前面的代表左上和右下 后面的值代表右上和左下 */
+			.div3{border-radius: 8px 0;}
+			/* .div3{border-radius: 8px 0 8px 0;} */
+			.div4{border-radius: 8px 8px 0 0;}
+			.div5{border-radius: 0 0 8px 8px;}
+			.div6{border-radius: 10px 20px 30px 40px;}
+			
+		</style>
+	</head>
+	<body>
+		<div class="div1"></div>
+		<div class="div2"></div>
+		<div class="div3"></div>
+		<div class="div4"></div>
+		<div class="div5"></div>
+		<div class="div6"></div>
+	</body>
+</html>

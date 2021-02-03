@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 数据列表标签：
+		     input中要设置list属性，里面值要等于想要对应的数据datalist的id值，他们才能对应起来
+			 option中的value要删除掉 否则无法实现效果
+		 -->
+		
+		请填写您的座驾：<input type="text" list="zj" />
+		<datalist id="zj">
+			<option>奔驰</option>
+			<option>宝马</option>
+			<option>兰博基尼</option>
+			<option>奥拓</option>
+		</datalist>
+		
+		请输入您的化妆品：<input type="text" list="hua" />
+		<datalist id="hua">
+			<option >大宝</option>
+			<option >sk2</option>
+			<option >兰蔻</option>
+			<option >阿玛尼</option>
+		</datalist>
+	</body>
+</html>

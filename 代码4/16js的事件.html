@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div{ width: 100px; height: 100px; background: pink;}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<input type="button" value="变宽" id="bt_w" />
+		<input type="button" value="变高" id="bt_h" />
+		<input type="button" value="变色" id="bt_c" />
+	</body>
+</html>
+<script type="text/javascript">
+	// 事件：在什么情况下 做了什么事情
+	// 事件三要素：事件源.事件类型=匿名函数(function)里面写的就是要执行的命令
+	
+	// 找到页面中的id元素后 习惯性的就把它保存在一个变量中 方便后续的使用
+	var bt_w = document.getElementById('bt_w');
+	var box = document.getElementById('box');
+	var bt_h = document.getElementById('bt_h');
+	var bt_c = document.getElementById('bt_c');
+	bt_w.onclick = function(){
+		// 这里写点击后要执行哪些命令
+		box.style.width = '200px';
+	}
+	
+	// 以下就是变高的代码
+	bt_h.onclick = function(){
+		// 点击后要做的事情
+		box.style.height = '200px';
+	}
+	
+	// 以下是变色代码
+	bt_c.onclick = function(){
+		// 点击之后要变色
+		box.style.background = 'blue';
+	}
+</script>
