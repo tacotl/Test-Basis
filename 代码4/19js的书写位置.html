@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- html中写js代码：行内js html的标签属性值要使用双引号 里面的js代码要使用单引号
+		     行内js强烈不推荐使用：因为没有实现代码的分离效果 语法修改不方便
+		 -->
+		<div onclick="alert('点我弹出 我是行内js')">点我呀</div>
+	</body>
+</html>
+<!-- 强烈推荐外链js 因为实现了代码的分离 修改会很方便 -->
+<!-- 外链js和内嵌js 先写的就先执行 后写的后执行 -->
+<!-- <script type="text/javascript">
+	// 内嵌js
+	alert('我是内嵌js');
+</script>
+<script type="text/javascript" src="js.js">
+	、// 一旦有src属性 引入别的js文件了 这里的代码都会失效
+</script> -->

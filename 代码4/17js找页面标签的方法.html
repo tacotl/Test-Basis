@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="div1">有类名</div>
+		<div class="div1" name="llf">有类名</div>
+		<div>什么都没有</div>
+		<div name="llf">有name的</div>
+	</body>
+</html>
+<script type="text/javascript">
+	// getElementsByClassName 找页面中class的方法 必须在后面添加[数字] 数字计数从0开始
+	// document.getElementsByClassName('div1')[0].onclick = function(){
+	// 	alert();
+	// }
+	
+	// getElementsByTagName 用标签名来获取元素 也要加[数字]
+	// document.getElementsByTagName('div')[2].onclick = function(){
+	// 	alert();
+	// }
+	
+	// getElementsByName 用name属性的值来找元素 也需要加[数字] name的值也可以重复出现
+	document.getElementsByName('llf')[1].onclick = function(){
+		alert();
+	}
+	
+	
+</script>
